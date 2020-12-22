@@ -24,12 +24,9 @@ nav>img{
     width:60%;
     margin: 0;
     align-self: center;
-  
 }
 
 .menu-bar{
-    display:flex;
-    flex-direction: column;
     margin:10em 0 0 0;
     padding: 0;
     border:1px solid blueviolet;
@@ -41,11 +38,12 @@ nav>img{
 .menu-bar li{
     background-color: #174A84;
     text-align: left;
+    display: flex;
+    align-items:center;
     padding:0 0 0 1em;
     margin:0;
     letter-spacing: 0px;
-    font: normal normal bold 16px Lato;
-    
+    font: normal normal bold 16px Lato;  
 }
 
 
@@ -55,7 +53,7 @@ nav>img{
 
 a {
     text-decoration: none;
-    display: inline-block;
+    padding: 0 0 0 1em;
     line-height: 2em;
 }
 
@@ -118,11 +116,11 @@ a {
     margin:0;    
 }
 
-.dashboard{border: 1px solid red;
+/*.dashboard{border: 1px solid red;
     display:flex;
     flex-direction: column;
 
-}
+}*/
 /* dash-style */
 .dash-items{
     display:grid;
@@ -220,7 +218,6 @@ a {
 }
 .edit-menu>ul>li{
     margin:1px;
-
 }
 
 /* employees table style*/
@@ -243,9 +240,11 @@ a {
 }
 .w-name>div{
     display:flex;
+    align-items:center;
 }
 .w-name>div>input{
     margin:auto 3px auto 3px;
+    
 }
 
 .w-name>div>input:checked + .w-name>div>input:after{
@@ -254,14 +253,21 @@ a {
 }
 .w-name>div>img{
     margin:0 3px 0 3px;
-    width:40px;
-    height:40px;
+    max-width:100%;
+    height:auto;
 }
+
+/*.name-box{
+    width:50%;
+    font-size: 3.5vw;
+    text-align: left;
+    padding: 0 0 0 1em;
+}*/
 
 
 .name>li{
         display: table-cell;   /* Get all images to show in a row */
-        font: normal normal normal 14px Lato;
+        font: normal normal normal 14px/15px Lato;
         letter-spacing: 0px;
         vertical-align: middle;
         
@@ -275,8 +281,8 @@ a {
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap: 3px 0;
-    margin:auto 7px auto 7px;
+    gap: 3px 3px;
+    
 }
 .w-title div{
     border-radius: 7px;
@@ -310,13 +316,23 @@ a {
 .w-dots{
     justify-content: center;
 }
-.dot{
+.dot-left{
     width:4px;
     height:4px;
+    
     border:1px solid #A5C9FF;
     background: #A5C9FF 0% 0% no-repeat padding-box;
     border-radius:7px;
-    justify-self: center;
+    justify-self: right;
+}
+.dot-right{
+    width:4px;
+    height:4px;
+    
+    border:1px solid #A5C9FF;
+    background: #A5C9FF 0% 0% no-repeat padding-box;
+    border-radius:7px;
+    justify-self: left;
 }
 
 .w-name{
@@ -381,6 +397,7 @@ a {
     
     .container{
         height:100vh;
+
     }
     .content{
         height:100%;
@@ -419,6 +436,12 @@ a {
         letter-spacing: 0px;
         color: #454F63;
         font-family: 'Lato', sans-serif;
+    }
+    .name-box{
+        width:50%;
+        font-size: 3.5vw;
+        text-align: left;
+        padding: 0 0 0 1em;
     }
     
   }
