@@ -1,54 +1,340 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Me</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <title>TURN PROTOTYPE INTO LIVE WEB APP</title>
+    </head>
 
-</head>
-<!-- This is an HTML comment. -->
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navcolor">
-            <a href="index.html" class="navbutton navitem">Welcome</a>
-            <a href="hobby.html" class="navbutton navitem">Ideas</a>
-            <a href="team.html" class="navbutton navitem">MyTeam</a>
-            <a href="contact.html" class="navbutton navitem">Contact</a>
-    </nav>
-
-    <div class="content">
-        <!-- Slide Show -->
-        <div id="slideShow">
-            <img class="mySlides" src="pictures/img_1.jpg" alt="my beads" style="width: auto !important; height: 600px !important; margin: 0 auto 1em auto;">
-            <img class="mySlides" src="pictures/img_2.jpg" alt="example1" style="width: auto !important; height: 600px !important; margin: 0 auto 1em auto;">
-            <img class="mySlides" src="pictures/img_3.jpg" alt="example2" style="width: auto !important; height: 600px !important; margin: 0 auto 1em auto;">
-        </div>
-
-        <!-- Paragraph -->
-        <section class="section center content" style="max-width:600px">
-                <h2 style="letter-spacing:4px">Handmade Valley</h2>
-                <p style="opacity:0.60"><i>Do you love beading?</i></p>
-                <p class="justify">Beading is a technique of creating artistic handicrafts that was already known in ancient Egypt. We can include all the methods in which we use small beads, a thin needle and thread. Although some argue whether braids created with the use of the kumihimo disk and crochet-bead cords should be included in the beading, if we consider two elements necessary to pass the beading method, i.e. thread and small beads, we can safely consider them as matching this category. Undoubtedly, beading can be called bead embroidery and various types of stitches, such as peyote, brick stich or right angle weave, i.e. RAW.
-                    </p>
-        </section>
-
-        </div>
-    <!-- Footer -->
-    <footer class="section center custompadding large">
-
-        <a href="#" class="fa fa-facebook-official"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <p class="medium">
-          Powered by <a href="https://pracawmotoroli.pl/o-akademii" target="_blank">Motorola Academy</a>
-        </p>
-        <p id="date"></p>
-    </footer>
-
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <body>
+        <div class=container>
+        <!--Navigation Bar-->
+            <nav class="mobile-off">
+                <img src="public/img/Nav_bar/logo.svg">
+                <ul class="menu-bar">
+                 <li>
+                    <img src="public/img//Nav_bar/dashboard.svg">
+                    <a href="#" class="button">Dashboard</a>
+                 </li>
+                    <li>
+                    <img src="public/img/Nav_bar/customers.svg">
+                    <a href="#" class="button">Customer</a>
+                 </li>
+                 <li>
+                    <img src="public/img/Nav_bar/schedules.svg">
+                    <a href="#" class="button">Schedules</a>
+                    </li>
+                    <li>
+                    <img src="public/img/Nav_bar/analytics.svg">
+                    <a href="#" class="button">Analytics</a>
+                 </li>
+                    <li>
+                    <img src="public/img/Nav_bar/help.svg">
+                    <a href="#" class="button">Help</a>
+                    </li> 
+                </ul>
+                <a href="#" class="feedback-button">Feedback</a>     
+            </nav>
+           
+            <img class="arrow-left mobile-off" src= "public/img/Nav_bar/baseline-arrow_downward.svg">
+        <!--Main Container-->
+            <main>
+                <header class="header ">
+                <div class="city-select mobile-off">
+                    <select>
+                        <option value="0">Select city</option>
+                        <option value="1">Scranton,PA</option>
+                        <option value="2">Montgomery,AL</option>
+                        <option value="3">Pierre,SD</option>
+                        <option value="4">Dover,DE</option>
+                      </select>
+                </div>
+                <div class="mobile-off">
+                    <img src="public/img/Header/baseline-message-24px.svg">
+                    <img src="public/img/Header/outline-search-24px (1).svg">
+                    <img class="notifi-important" src="public/img/Header/baseline-notification_important-24px.svg"> 
+                    <img src="public/img/Header/NoPath.svg">
+                </div>
+                <div class="mobile-on">
+                    <div>
+                    <img src="public/img/Mobile/baseline-arrow_downward.svg">
+                    <img src="public/img/Mobile/baseline-settings.svg"></div>
+                    <div class="employees-mob">Employees</div>
+                </div>
+                 </header>
+            <section class="dashboard">
+                <div class="dash-items mobile-off">
+                    <div class="dash-header-item1 center">Dashboard</div>
+                    <div class="dash-header-item2 center">Create order + </div>
+                </div>
+                <div class="content debug ">
+                    <div class="employees">
+                        <div class="employees-items">
+                            <div class="empl-counter mobile-off">Employees(17)</div>
+                            <div style="display:flex;">
+                                <div class="add-new mobile-off">Add new + </div>
+                                <img class="mobile-off" src="public/img/Employees/settings.svg">
+                            </div>
+                        </div>
+                        <div class="edit-menu mobile-off"> 
+                                <div>Delete</div>
+                                <div>Print</div>
+                                <div>Export</div>
+                                <div>Make Manager</div>
+                        </div>
+                        <div class="person debug mobile-off">
+                        <ul class="name m-name">
+                            <li class="w-name" style="width:25%">
+                                <input type="checkbox">
+                                Name
+                                <img src="public/img/Employees/baseline-arrow_downward.svg">
+                            </li>
+                            <li class="w-email">email <img src="public/img/Employees/baseline-arrow_downward.svg">
+                            </li>
+                            <li class="w-title"style="font-size:14px !important">title<img src="public/img/Employees/baseline-arrow_downward.svg"></li>
+                            <li class="w-data">data modified<img src="public/img/Employees/baseline-arrow_downward.svg"></li>
+                            <li class="w-dundies">Dundies<img src="public/img/Employees/baseline-arrow_downward.svg"></li>
+                            <li class="w-dots"></li>
+                        </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox">
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title">
+                                    <div class="PM">Product Manager</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title">
+                                    <div class="ARM">Assistant to the Regional Manager</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title">
+                                    <div class="PM">Product Manager</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="A">Accountant</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="S">Salesman</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="SR">Supplier Realtions</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="A">Accountant</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="S">Salesman</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="person debug">
+                            <ul class=name>
+                                <li class= "width-MobOn1 w-name">
+                                <div>
+                                   <input type="checkbox" >
+                                   <img src="public/img/Employees/person-1.png">
+                                   <p>Adam Bartosz9</p>
+                                </div>
+                                </li>
+                                <li class="mobile-off w-email">adam.bartosz@gmail.com</li>
+                                <li class="mobile-off w-title"><div class="A">Accountant</div></li>
+                                <li class="mobile-off w-data">17/12/2020</li>
+                                <li class="mobile-off w-dundies">125</li>
+                                <li class="width-MobOn2 w-dots" >
+                                    <div class="dot-grid">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="employees-skills mobile-off debug" style="margin:1px;">employees-skills</div>
+                    <div class="avg-salary mobile-off debug">avg-salary</div>
+                </div>
+                <div class="debug mobile-off">footer</div>
+            </section>
+            <footer class="debug mobile-off" style="border: 1px solid black;">
+                
+            </footer>
+        </main>
+    </div>
 </body>
-</html>
