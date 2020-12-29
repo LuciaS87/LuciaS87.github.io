@@ -398,7 +398,7 @@ a {
     border-radius: 7px;
     padding:4px;   
 }
-#head{
+.head{
    display:flex;
    justify-content: space-between;
    align-items:center;
