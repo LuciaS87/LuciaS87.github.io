@@ -370,9 +370,11 @@ a {
     height:32px;
     border-radius: 20px;
     text-align: center;
-    vertical-align: middle;
     color:#A5C9FF;
     font-size:14px;
+    position:relative;
+    bottom:0.5rem;
+    right:15rem;
     
 }
 .page2{
@@ -383,6 +385,9 @@ a {
     text-align:center;
     color:#C7C8C9;
     font-size:12px;
+    position:relative;
+    bottom:0.5rem;
+    right:15rem;
 }
 
 
@@ -593,7 +598,7 @@ a {
 
 
   
-  @media only screen and (max-device-width: 960px) {
+  @media only screen and (max-device-width: 600px) {
     .mobile-off{
         display:none!important;
     }
@@ -606,15 +611,15 @@ a {
     .mobile-on>div{
         display:inherit;
         justify-content: space-between;
+        width: 85vw;
+        margin: 0 1rem 0 0.5rem;
+        padding: 0.5em 1em 0.5em 1em;
     }
     
     .container{
         height:100vh;
-
     }
-    .content{
-        height:100%;
-    }
+    
     .name {
       display: flex;
     }
@@ -631,59 +636,30 @@ a {
     }
     .content{
         display:flex;
-        flex-direction: column;
+        width:100vw;
     }
-    .employees{
+    .employees {
         box-shadow: 0px 4px 16px #455B631A;
         border-radius: 12px;
-        height:80vh;
-        justify-self: stretch;
-        width:100vw;
-
+        width: 100vw;
+        padding: 1em 1em 1em 1em;
+        margin: 1em 1em 1em 1em;
     }
     .w-name{
         justify-content: space-between;
     }
     .employees-mob{
-        text-align: left;
         font: normal normal 600 40px Gibson;
         letter-spacing: 0px;
         color: #454F63;
         font-family: 'Lato', sans-serif;
+        padding:0;
     }
     .name-box{
         width:50%;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         text-align: left;
         padding: 0 0 0 1em;
     }
     
   }
-  
-
-
-
-/*.person{
-    display:grid;
-    grid-template-columns: 200px 200px 200px repeat(2,1fr) 50px;
-}
-
-
-
-.person>div{
-    text-align:center;
-    word-wrap:break-word;
-}
-
-.mobile-on{
-    display:none
-}*/
-/* you can define mobile style in separate file */
-
-
-
-
-
-  
-
-  
