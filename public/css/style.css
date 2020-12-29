@@ -638,6 +638,7 @@ a {
         border-radius: 12px;
         height:80vh;
         justify-self: stretch;
+        width:100%;
 
     }
     .w-name{
