@@ -617,10 +617,6 @@ a {
         height:100vh;
     }
     
-    .name {
-      display: flex;
-    }
-    
     .name li {
       border:none;
       }
