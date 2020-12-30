@@ -116,9 +116,9 @@ a {
 /* dash-style */
 .dash-items{
     display:grid;
-    margin:30px;
+    margin:1rem;
     grid-template-columns: 1fr 1fr;
-    font: normal normal 900 Lato;
+
 }
 .dash-header-item1{
     grid-column:1/2;
@@ -605,15 +605,12 @@ a {
     .mobile-on{
         display:flex;
         flex-direction: column;
-        width: 100%;
-        justify-content:space-between;
+        width: 100vw;
     }
-    .mobile-on>div{
+    .mobile-on-img{
         display:inherit;
         justify-content: space-between;
-        width: 85vw;
-        margin: 0 1rem 0 0.5rem;
-        padding: 0.5em 1em 0.5em 1em;
+        padding: 1em 1em 0.5em 1em;
     }
     
     .container{
@@ -650,10 +647,11 @@ a {
     }
     .employees-mob{
         font: normal normal 600 40px Gibson;
-        letter-spacing: 0px;
         color: #454F63;
         font-family: 'Lato', sans-serif;
-        padding:0;
+        width:100vw;
+        padding:1rem;
+
     }
     .name-box{
         width:50%;
@@ -661,5 +659,38 @@ a {
         text-align: left;
         padding: 0 0 0 1em;
     }
-    
+    header{
+        border-bottom: none!important;
+    }
   }
+
+ /* @media only screen and (min-device-width: 600px) and (max-device-width:960px) {
+  
+
+
+}
+
+
+
+/*.person{
+    display:grid;
+    grid-template-columns: 200px 200px 200px repeat(2,1fr) 50px;
+}
+
+
+
+.person>div{
+    text-align:center;
+    word-wrap:break-word;
+}
+
+.mobile-on{
+    display:none
+}*/
+/* you can define mobile style in separate file */
+
+
+
+
+
+  
