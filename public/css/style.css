@@ -491,7 +491,6 @@ a {
 }
 
 .box1{
-    border:1px solid #5773FF;
     background-color: #5773FF;
 }
 .box2{
@@ -583,22 +582,13 @@ a {
     color:#0A4B6D;
 }
 
-
-
-
-
-
 .mobile-on{
     display:none;
 }
 
 
-   
 
-
-
-  
-  @media only screen and (max-device-width: 600px) {
+  @media only screen and (max-device-width: 500px) {
     .mobile-off{
         display:none!important;
     }
@@ -647,7 +637,6 @@ a {
         font-family: 'Lato', sans-serif;
         width:100vw;
         padding:1rem;
-
     }
     .name-box{
         width:50%;
@@ -660,10 +649,74 @@ a {
     }
   }
 
- /* @media only screen and (min-device-width: 600px) and (max-device-width:960px) {
+  @media only screen and (min-device-width: 500px) and (max-device-width:800px) {
+    .mobile-on1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobile-off1{
+        display:none!important;
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        grid-gap:1rem;
+        width:95vw;
+        
+    }
+    header{
+        border-bottom: none!important;
+    }
+
+    .container{
+        height:100vh;
+        margin:1rem;
+    }
+    .mobile-on1-img{
+        display:inherit;
+        justify-content: space-between;
+        width:95vw;
+    }
+    .avg-salary-mob {
+        font: normal normal 600 40px Gibson;
+        color: #454F63;
+        font-family: 'Lato', sans-serif;
+        padding: 1rem;
+    }
+    .mob-con{
+        display:grid;
+        grid-template-columns:repeat(3,1fr)
+        
+    }
+    .period-mob{
+        display:grid;
+        justify-content: center;
+        border:1px solid #F4F4F6;
+        box-shadow: 0px 12px 16px #455B6314;
+        height:44px;
+        font-size:13px;
+        align-items: center;
+        color:#959DAD;
+    }
+    .period-mob:first-child{
+        text-align: center;
+    }
+    .period-mob:hover{
+        color:#454F63!important;
+
+    }
+    .employees-skills{
+        box-shadow: 0px 4px 16px #455B631A !important;
+        border-radius: 12px!important;
+    }
   
-
-
+    .box-mob{
+        height:6px;
+        width:31.33px;
+        display:inline-flex;
+    }
+  
 }
 
 
