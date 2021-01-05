@@ -657,9 +657,10 @@ a {
         border-bottom: none!important;
     }
     .mobile-off2{
-        display:none!important;
+        display:none;
     }
-
+    avg-salary-mob{
+        display:none;
   }
 
   @media only screen and (min-device-width: 500px) and (max-device-width:800px) {
