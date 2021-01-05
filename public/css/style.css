@@ -598,6 +598,10 @@ a {
     .mobile-off{
         display:none!important;
     }
+      
+      mobile-off2{
+          display:none!important;
+      }
     .mobile-on{
         display:flex;
         flex-direction: column;
@@ -733,8 +737,6 @@ a {
     .on-click{
        display:none;
     }
-      mobile-off2{
-          display:none!important;
     
   }
 
