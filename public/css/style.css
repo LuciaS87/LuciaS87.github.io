@@ -591,9 +591,6 @@ a {
 .mobile-on{
     display:none;
 }
-.mobile-on1-img{
-    display:none;}
-
 
 
   @media only screen and (max-device-width: 500px) {
