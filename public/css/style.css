@@ -733,6 +733,8 @@ a {
     .on-click{
        display:none;
     }
+      mobile-off2{
+          display:none!important;
     
   }
 
