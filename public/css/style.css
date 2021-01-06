@@ -614,8 +614,8 @@ a {
         justify-content: space-between;
         padding: 1em 1em 0.5em 1em;
     }
-      .mob-div{
-          display:none;}
+      .mob-div{display:none;
+      }
     
     .container{
         height:100vh;
@@ -745,7 +745,6 @@ a {
     .on-click{
        display:none;
     }
-    
     
   }
 
