@@ -640,7 +640,7 @@ a {
         border-radius: 12px;
         width: 100vw;
         padding: 1em 1em 1em 1em;
-        margin: 1em 1em 1em 1em;
+        margin: 1em 0 1em 1.5em;
     }
     .w-name{
         justify-content: space-between;
