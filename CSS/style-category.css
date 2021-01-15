@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(../FONTS/Roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+}
+
+:root{
+    --light1: #eeeeee;
+    --creme1: #fffadc;
+    --gray1: #8d99ae;
+    --blue1: #2b2d42;
+    --blue2: #2e3640;
+    --blue3: #0e2138;
+    --red1: #ef233c;
+    --green1: rgb(92, 107, 63);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blue1);
+    color: var(--light1);
+    font-size: 1;
+}
+
+    .wrapper{
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+/* Header section  */
+header{
+    padding: 3rem;
+}
+
+    .sign-in{
+        display: flex;
+        justify-content: space-between;
+        
+    }  
+
+        .sign, .back{
+            padding: 2rem;
+            line-height: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+    .logo{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        padding:2rem;
+        justify-items: center;
+        text-align: center;
+        
+    }
+    .logo img{
+        max-width: 100%;
+    }
+
+/* Main section*/
+main{
+    padding: 3rem;
+}
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+         .category{
+            width: 20rem;
+            height: 27rem;
+            background-color: var(--blue2);
+            border-radius: 1rem;
+            box-shadow: 1px 3px 8px var(--light1);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            overflow: hidden;
+
+      
+        }
+        .category img{
+          object-fit: fill;
+          height: 27rem;
+          width: 20rem;
+        } 
+        .film_img:hover{
+            height: 29rem;
+            width: 22rem;
+            
+
+        }
+
+        .filmname{
+            position: absolute;
+            bottom:1em;
+            right:0;
+           z-index: 1;
+            height: 30px;
+            border: 1px solid white;
+            background-color: rgba(255,255, 255, 0.8);
+            color: black;
+            width: 80%;
+            line-height: 3em;
+            text-indent: 1em;
+            border-radius: 1em 0 0 1em;
+
+        }
+
+        .fas, .fa{
+            color: white;
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        
+/* Footer */
+footer{
+    padding: 3rem;
+}  
+
+.footer-flex{
+    display: flex;
+    justify-content: center;
+}
+.footer-flex a{
+    display:flex;
+    text-decoration: none;
+    color: white;
+    margin:0 1rem 0 0;
+
+}
+.footer-item{
+    margin:0 0.5rem 0 0;
+}
+.footer-item:hover{
+    text-decoration: underline;
+}
+
+    @media only screen and (max-device-width: 48em){
+        a span {
+            display: none;
+        }
+        .footer-grid{
+            display:flex;
+            justify-content: space-around;
+        }
+       .footer-item span{
+           display: none;
+       }
+    }
+
+
+ 
