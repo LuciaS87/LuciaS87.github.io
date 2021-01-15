@@ -1,0 +1,7 @@
+@media only screen and (max-device-width: 48em){
+    .mobile-off1{
+        display:none;
+    }
+    .wrapper{
+        box-shadow:none;
+}
