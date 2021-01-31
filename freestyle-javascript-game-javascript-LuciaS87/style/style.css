@@ -1,0 +1,331 @@
+
+:root{
+    --black: black;
+    --white: white;
+    --red: red;
+    --gray: gray;
+    --yellow:#f7df0d;
+    --yellow1: yellow;
+    --darkblue: #010226;
+    --font-family: 'Ubuntu', sans-serif;
+}
+
+.body {
+  background: url(/img/tlo_JakaToMelodia.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  height: 30vh;
+}
+
+.fa-square{
+  font-size: 5em;
+  color: #D4AF37;
+  position:absolute;
+  top:0.1em;
+  right:0.3em;
+}
+
+.fa-play-circle{
+  font-size: 15em;
+  padding:0;
+  color:#D4AF37;
+}
+
+.timer{
+    text-align: right;
+    color: var(--white);
+}
+.playButton{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  top: 8em;
+}
+
+.play{
+  background-color: transparent;
+  outline:0;
+  border:none;
+  border-radius: 50%; 
+}
+.fa-play-circle:hover{
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px #dba632;
+}
+.fa-play-circle:active{
+  box-shadow: 0 1px var(--black);
+  transform: translateY(8px);
+  border: 2px solid #b39b69;
+}
+
+
+.container{
+    /* border: 1px solid var(--red);  */
+    display: grid; 
+    grid-template-columns: 2fr 1.5fr 2fr;
+    height:70vh;
+    margin:0;
+}
+
+
+.answerAB, .answerCD {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+  
+.button {
+  width: 25em;
+  height: 5em;
+  margin: 0.8em;
+  padding: 0;
+  background: rgba(152, 97, 94, 0.8);
+  border-radius: 5px;
+}
+
+.dot {
+  background-color: rgb(248, 18, 18);
+  border-color: var(--red);
+  width: 10.75em;
+  height: 3.6em;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 40px 40px var(--red) inset, 0 0 0 0 var(--red);
+  transition: all 100ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+  cursor: url('../img/hand.png'), auto;
+}
+
+.dot:hover {
+  box-shadow: 0 0 10px 0 hsl(59, 88%, 50%) inset, 0 0 10px 4px var(--red);
+}
+
+.dot:active {
+  box-shadow: 0 8px var(--black);
+  transform: translateY(8px);
+  border: 5px solid rgb(255, 0, 0);
+}
+
+.dotBlack {
+  width: 8em;
+  height: 5em;
+  background: red;
+  border-top-right-radius: 5em;
+  border-top-left-radius: 5em;
+  margin-top: -3em;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  box-shadow: 0 0 80px 80px var(--red) inset, 0 0 0 0 var(--red);
+}
+
+.dotBlack:hover {
+  box-shadow: 0 0 10px 0 hsl(4, 88%, 50%) inset, 0 0 10px 4px var(--red);
+
+}
+
+.podium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.table {
+  width: 34.5em;
+  height: 11.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #c4c4c4;
+  opacity: 0.8;
+  box-shadow: inset 0px 25px 200px rgba(0, 0, 0, 0.98);
+  margin: 10px auto 0;
+  border-radius: 100%;
+  margin-bottom: -9em;
+}
+
+.kolumna {
+  width: 15rem;
+  height: 15rem;
+  background-color: #98615E;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -9em;
+  box-shadow: 0px 4px 4px rgba(218, 241, 8, 0.25);
+}
+
+.round {
+  width: 15rem;
+  height: 7rem;
+  background-color: #98615E;
+  border-radius: 100%;
+  margin-bottom: -3.1em;
+  border: 1px solid rgba(58, 14, 14, 0.4);
+}
+
+.score {
+  width: 10rem;
+  height: 5rem;
+  text-align: center;
+  margin-bottom: 1em;
+  border-radius: .1em;
+  color: var(--yellow);
+  background-color: rgb(3, 3, 39);
+  font-size: 3em;
+  line-height: 1.5em;
+  box-shadow: 20px 20px 20px 20px rgba(227, 243, 54, 0.25);
+  position:relative;
+}
+.score-result{
+  background: transparent;
+  position:absolute;
+  left: 1.4em;
+  font-weight: bold;
+  
+}
+
+video {
+  min-width: 100%;
+  height: 5rem;
+  z-index: -1;
+  box-shadow: 20px 20px 20px 20px rgba(227, 243, 54, 0.25);
+  ;
+}
+
+/* ------- pulse (kolory jeszcze razem dobierzemy) --------*/
+
+
+ul { 
+    position: absolute; 
+    display: flex; 
+  } 
+  ul li { 
+    list-style: none; 
+    width: 80px; 
+    height: 80px; 
+    background:transparent; 
+    border-radius: 50%;
+    margin-top: 2em; 
+
+    animation: animate 2s ease-in-out infinite; 
+  } 
+  @keyframes animate { 
+    0%, 
+    40%, 
+    100% { 
+      transform: scale(0.2); 
+    } 
+    20% { 
+      transform: scale(1); 
+    } 
+  } 
+
+  ul li:nth-child(1) { 
+    animation-delay: -1.2s; 
+    background: rgb(122, 132, 221); 
+    box-shadow: 0 0 50px var(--yellow1); 
+  } 
+  ul li:nth-child(2) { 
+    animation-delay: -1s; 
+    background: rgb(224, 226, 91); 
+    box-shadow: 0 0 50px rgb(99, 247, 136); 
+  } 
+  ul li:nth-child(3) { 
+    animation-delay: -0.8s; 
+    background: rgb(47, 231, 23); 
+    box-shadow: 0 0 50px  rgb(30, 243, 225); 
+  } 
+  ul li:nth-child(4) { 
+    animation-delay: -0.6s; 
+    background: rgb(182, 81, 120); 
+    box-shadow: 0 0 50px rgb(233, 250, 3); 
+  } 
+  ul li:nth-child(5) { 
+    animation-delay: -0.4s; 
+    background: rgba(138, 108, 126, 0.733); 
+    box-shadow: 0 0 50px  rgb(247, 61, 176); 
+  } 
+
+.timer{
+  font-size:3em; 
+  position:absolute;
+  top: 0.4em;
+  right: 0.8em;
+}
+
+/*start Page*/
+
+.bodyStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bodyStartPage {
+  background: url(/img/starterPage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.answer{
+  color: transparent;
+}
+.answer-show{
+  color: moccasin;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-shadow: #010226;
+  text-shadow: 0px 1px black;
+}
+.answer-correct
+{
+  background-color: green;
+}
+.answer-incorrect
+{
+  background-color: red;
+}
+
+.buttonStartPage {
+  margin-bottom: 5em;
+  width: 15em;
+  height: 4em;
+  background: var(--darkblue);
+  box-shadow: 0 0 5px 3px orangered;
+  color: var(--white);
+  font-weight: bold;
+  outline: none;
+  position: absolute;
+  top: 40em;
+  left:50em;
+}

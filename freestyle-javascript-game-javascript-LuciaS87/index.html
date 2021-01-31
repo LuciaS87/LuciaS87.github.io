@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript Game</title>
+    <meta charset="UTF-8">
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="/app.js" type="text/javascript" async></script>
+    <script src="/game.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f904352e86.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="header">
+        <i class="far fa-square"></i>
+        <div class="timer">10</div>
+        <div class="playButton">
+            <button class="play"> <i class="far fa-play-circle"></i></button>
+        </div>
+        </div>
+    <div class="container">
+        <div class="answerAB">
+            <button class="button answer"></button>
+            <button class="button answer"></button>
+        </div>
+        <div class="podium">
+            <div class="table">
+                <button class="dot">
+                    <div class="dotBlack"></div>
+                </button>
+            </div>
+            <div class="round"></div>
+            <div class="kolumna">
+                <div class="score">
+                    <span class="score-result">7</span>
+                    <video autoplay muted loop>
+                        <source src="./video/score_video.mp4">
+                    </video>
+                    
+                </div>
+               
+            </div>
+        </div>
+        <div class="answerCD">
+            <button class="button answer"></button>
+            <button class="button answer"></button>
+        </div>
+
+    </div>
+
+    <img id="background" src="img/tlo_jakatoMelodia.jpeg">
+</body>
+</html>
